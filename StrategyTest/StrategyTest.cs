@@ -1,6 +1,5 @@
 ﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Strategy;
+using Microsoft.VisualStudio.TestTools.UnitTesting;using Strategy.Models;
 using Strategy.Strategies;
 
 namespace StrategyTest
