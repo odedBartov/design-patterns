@@ -29,7 +29,7 @@ namespace StrategyTest
         }
 
         [TestMethod]
-        public void CantFlyTryToFly_ShouldFails()
+        public void CanNottFlyTryToFly_ShouldFail()
         {
             string result = cat.TryTFly();
             Assert.AreEqual(canNotFly.Fly(), result);
