@@ -1,16 +1,16 @@
 ﻿using Strategy.Interfaces;
-using Strategy.Models;
+using Strategy.Strategies;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Strategy
+namespace Strategy.Models
 {
-    public class Cat : Animal
+    public class Sparrow : Animal
     {
-        public Cat() : base(new CanNotFly())
+        public Sparrow() : base(new CanFly())
         {
         }
     }

@@ -1,4 +1,5 @@
 ﻿using Strategy.Interfaces;
+using Strategy.Strategies;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,11 +8,10 @@ using System.Threading.Tasks;
 
 namespace Strategy.Models
 {
-    public class CanNotFly : IFlyable
+    public class Rat : Animal
     {
-        public string Fly()
+        public Rat() : base(new CanNotFly())
         {
-            return "I can not fly! I am groundded";
         }
     }
 }

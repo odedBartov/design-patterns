@@ -41,13 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cat.cs" />
-    <Compile Include="Eagle.cs" />
+    <Compile Include="Models\Cat.cs" />
+    <Compile Include="Models\Duck.cs" />
+    <Compile Include="Models\Eagle.cs" />
     <Compile Include="Interfaces\IFlyable.cs" />
     <Compile Include="Models\Animal.cs" />
-    <Compile Include="Models\CanFly.cs" />
-    <Compile Include="Models\CanNotFly.cs" />
+    <Compile Include="Strategies\CanFly.cs" />
+    <Compile Include="Strategies\CanNotFly.cs" />
+    <Compile Include="Strategies\FlipWings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Models\Rat.cs" />
+    <Compile Include="Models\Sparrow.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

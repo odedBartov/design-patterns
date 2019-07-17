@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Strategy;
-using Strategy.Models;
+using Strategy.Strategies;
 
 namespace StrategyTest
 {
@@ -23,14 +23,14 @@ namespace StrategyTest
         }
 
         [TestMethod]
-        public void EagleTryToFly_ShouldSucceed()
+        public void CanFlyTryToFly_ShouldSucceed()
         {
             string result = eagle.TryTFly();
             Assert.AreEqual(canFly.Fly(), result);
         }
 
         [TestMethod]
-        public void CatTryToFly_ShouldFails()
+        public void CantFlyTryToFly_ShouldFails()
         {
             string result = cat.TryTFly();
             Assert.AreEqual(canNotFly.Fly(), result);
